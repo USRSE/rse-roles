@@ -1,0 +1,28 @@
+# Site settings
+title: US-RSE Roles
+description: Community database of job descriptions
+baseurl: "/rse-roles"  # the subpath of your site, e.g. /blog
+url: ""
+repo: https://github.com/USRSE/rse-roles
+
+
+# Build settings
+markdown: kramdown
+# plugins:
+# - jekyll-feed
+
+# Social
+email: contact@us-rse.org
+twitter: us_RSE
+
+# Posts default Permalink
+permalink: role/:year/:title/
+
+
+# Exclude from processing.
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock

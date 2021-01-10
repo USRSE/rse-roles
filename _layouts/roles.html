@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-100">
+
+{% include head.html %}
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  {% include navbar.html %}
+
+        <div class="col-lg-10 mx-auto mt-5 article">
+          {{ content }}
+        </div>
+
+  </main>
+
+  {% include footer.html %}
+
+     <script async defer src="https://buttons.github.io/buttons.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+     <script> new WOW().init(); </script>
+ 
+</body>
+
+</html>

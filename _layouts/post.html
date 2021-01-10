@@ -1,0 +1,33 @@
+---
+layout: roles
+---
+
+<h1><b>{{ page.title }}</b></h1>
+
+<p class="article-metadata text-muted">
+  {{ page.date | date_to_long_string }} -  
+  <b>
+  {% assign words = content | number_of_words %}
+  {% if words < 360 %}
+    less than 1 min read time
+  {% else %}
+    {{ words | divided_by:180 }} mins read time
+  {% endif %}
+  </b>
+
+  <br>
+
+  {% if page.tags != empty %}
+    Tags: 
+    {% for tag in page.tags %}
+      <span class="badge badge-pill text-primary border border-primary">{{ tag }}</span>
+    {% endfor %}
+  {% endif %}
+
+</p>
+
+{{ content }}
+
+<footer>
+  Everything is going to be okay.</br>
+</footer>
