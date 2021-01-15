@@ -6,6 +6,8 @@ layout: post
 description: This was a proposed description used with HR to attempt to establish an RSE role. It was based off of actual duties of an RSE in Research Computing, and other RSE job descriptions.
 ---
 
+This was a proposed description used with HR to attempt to establish an RSE role. It was based off of actual duties of an RSE in Research Computing, and other RSE job descriptions, namely from <a href="{{ site.baseurl }}/role/2020/research-software-engineer-princeton/">Princeton</a>.
+
 ## Job Description
 A Research Software Engineer (RSE) has a background in computational science/engineering and is interested in providing this expertise to research groups across domain sciences, engineering, and humanities. The RSE’s general focus is to translate the needs of a lab or group into high quality, performant, and sustainable research software that can be easily shared or cited. The RSE also works with research computing to build collaborative environments and tools for research, and to champion best practices for software development at the university. The RSE is highly valued for being a core member of research teams, a contributor to open source, and following best practices and testing computational techniques in new and emerging technologies. A layer of RSEs across a university also provides a sustainable, consistent communication network to better connect historically disparate groups that might be working on similar projects unknowingly.
 
