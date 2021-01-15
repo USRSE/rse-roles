@@ -25,6 +25,6 @@
         resultsContainer: document.getElementById('results-container'),
         searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
         noResultsText: '<li class="list-group-item">No results found</li>',
-        json: '{{ '/search.json' | relative_url }}'
+        json: '{{ site.baseurl }}/search.json'
       })
 </script>
