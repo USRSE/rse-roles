@@ -3,7 +3,7 @@ title: Research Software Engineer at Princeton University
 tags: [team, academic, research-computing]
 style: fill
 layout: post
-description: One of two of the RSE roles for the RSE group at Princeton working on algorithms for power grid research in the Department of Operations Research and Finanial Engineering (ORFE).
+description: An RSE role within the RSE group at Princeton working on algorithms for power grid research with the Department of Operations Research and Financial Engineering (ORFE).
 ---
 
 |         |          |
