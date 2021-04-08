@@ -1,6 +1,6 @@
 ---
 title: Research Reproducibility Engineer
-tags: [academic]
+tags: [academic, research-computing]
 style: fill
 layout: post
 description: This was the actual job description submit and approved for the first Research Software Engineer in the Stanford Research Computing Center. Specifics about the job code and salary grade are left out.
