@@ -3,7 +3,7 @@ title: Research Software Engineer at Princeton University
 tags: [team, academic, research-computing]
 style: fill
 layout: post
-description: The second of two of the RSE roles for the RSE group at Princeton working on social science research and machine learning.
+description: An RSE role within the RSE group at Princeton working with social science researchers.
 ---
 
 |         |          |
