@@ -1,5 +1,5 @@
 ---
-title: Research Software Engineer at Princeton (ORFE)
+title: Research Software Engineer at Princeton University
 tags: [team, academic, research-computing]
 style: fill
 layout: post
