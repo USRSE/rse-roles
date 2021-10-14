@@ -3,8 +3,9 @@
 <div class="input-group mt-5 px-3">
   <input id="search-input" type="text" class="form-control search-box" placeholder="Search...">
   <div class="input-group-append bg-usrse-1">
-    <span class="input-group-text border text-white bg-usrse-1"><i class="fas fa-search"></i></span>
-    <span class="input-group-text border bg-usrse-1"><a href="{{ site.baseurl }}/roles/"><i class="fas fa-list text-white"></a></i></span>
+    <span style="cursor:pointer" class="input-group-text border text-white bg-usrse-1"><i class="fas fa-search"></i></span>
+    <span style="cursor:pointer" class="input-group-text border bg-usrse-1"><a href="{{ site.baseurl }}/roles/"><i class="fas fa-list text-white"></a></i></span>
+    <span style="cursor:pointer" class="input-group-text border bg-usrse-1"><i id="reset" class="fas fa-undo text-white"></a></i>
   </div>
 </div>
 <ul class="px-3" id="results-container"></ul>
