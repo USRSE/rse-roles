@@ -17,11 +17,16 @@ a:hover {
    transition: none !important;
    text-decoration: none !important;
 }
+.tag {
+  cursor: pointer;
+}
 </style>
+
+<button id="reset" class="btn btn-primary">Reset</button>
 
 {% for post in site.posts %}
 
-<div style="margin-bottom:50px; margin-top:50px">
+<div style="margin-bottom:50px; margin-top:50px" class="alltags {% for tag in post.tags %}tag-{{ tag }} {% endfor %}">
 <h1><b><a style="" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></b></h1>
 
 <p class="article-metadata text-muted">
@@ -40,7 +45,7 @@ less than 1 min read time
 {% if post.tags != empty %}
 Tags: 
 {% for tag in post.tags %}
-<span class="badge badge-pill text-primary border border-primary">{{ tag }}</span>
+<span data-id="tag-{{ tag }}" class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
 {% endfor %}
 {% endif %}
 </p>
@@ -52,5 +57,26 @@ Tags:
 
 <br>
 
-<hr>
+<hr class="alltags {% for tag in post.tags %}tag-{{ tag }} {% endfor %}">
 {% endfor %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+    // Reset list
+    $("#reset").click(function(){
+        $(".alltags").show();    
+    })
+
+    // When clicking a tag, filter to tag
+    $('.tag').click(function(event){
+        // prevent navigation to role page when clicking tag
+        tag = $(this).attr("data-id")
+        console.log(tag)
+        $(".alltags").hide();
+        $("." + tag).show();
+    })
+
+});
+</script>

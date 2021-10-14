@@ -29,13 +29,13 @@
       {% assign article_url = post.url | relative_url %}
     {% endif %}
 
-    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+    <div class="col-lg-6 my-3 wow animated fadeIn alltags {% for tag in post.tags %}tag-{{ tag }} {% endfor %}" data-wow-delay=".15s">
       <a href="{{ article_url }}" class="article card {% cycle 'bg-usrse', 'bg-usrse-1' %}">
         <div class="card-body {{ text_style }}">
           <h3 class="card-title">{{ post.title }}</h3>
           <p class="card-text">
             {% for tag in post.tags %}
-              <span class="badge {{ badge_style }}">{{ tag }}</span>
+              <span data-id="tag-{{ tag }}" class="tag badge {{ badge_style }}">{{ tag }}</span>
             {% endfor %}
           </p>
           <p class="card-text">
@@ -51,7 +51,6 @@
         </div>
       </a>
     </div>
-
   {% endfor %}
 
 </div>
